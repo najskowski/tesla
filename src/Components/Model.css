@@ -1,0 +1,16 @@
+div.model {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div#model-S {
+    background-image: url(./Model-S/model-s-background.png);
+}
+div#model-3 {
+    background-image: url(./Model-3/model-3-background.png);
+}
+div#model-X {
+    background-image: url(./Model-X/model-x-background.png);
+}
+div#model-Y {
+    background-image: url(./Model-Y/model-y-background.png);
+}

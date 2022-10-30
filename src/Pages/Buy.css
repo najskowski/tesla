@@ -1,0 +1,63 @@
+div#buy-page {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+input {
+    padding-left: 7px;
+}
+input, select, option {
+    width: 200px;
+    border: none;
+    border-radius: 0;
+    background-color: rgb(240, 240, 240);
+    transition: all 0.1s ease-in-out;
+}
+input[type=text]:focus, select, option {
+    caret-color: transparent;
+    border-left: 3px solid red;
+    outline: none;
+}
+span {
+    color: red;
+}
+label {
+    color: rgb(100, 100, 100);
+    letter-spacing: 1px;
+}
+select {
+    background-color: rgb(240, 240, 240);
+    padding-left: 4px;
+    height: 25px;
+    -webkit-appearance: none;
+   border-bottom: 2px solid white;
+}
+input[type=submit] {
+    background-color: white;
+    color: rgb(100, 100, 100);
+    transition: all .5 ease-in-out;
+    border: 3px solid transparent;
+    border-top: 15px solid transparent;
+}
+input[type=submit]:hover {
+    border-bottom: 3px solid red;
+    color: black;
+    
+}
+.parent {
+    height: 500px;
+}
+/* email address */
+input#emailname {
+    width: 100px;
+} input#emailhost {
+    width: 72px;
+}
+.parent {
+    transition: all 2s ease-in-out;
+}
+tr {
+    transition: all 1s ease-in-out;
+}
+tr:hover {
+    background-color: #cc0000bf;
+}

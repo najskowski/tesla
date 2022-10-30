@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ModelS from './Components/Model-S/ModelS'
+import Model3 from './Components/Model-3/Model3';
+import ModelX from './Components/Model-X/ModelX';
+import ModelY from './Components/Model-Y/ModelY';
+import Header from './Components/Header/Header'
+import Home from './Pages/Home';
+import './App.css'
+import Buy from "./Pages/Buy";
+import Summary from "./Pages/Summary";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route>
+            <Route path="/" element={<Home />} />
+            <Route path="S" element={<ModelS renderButton={false} />} />
+            <Route path="3" element={<Model3 renderButton={false} />} />
+            <Route path="X" element={<ModelX renderButton={false} />} />
+            <Route path="Y" element={<ModelY renderButton={false} />} />
+            <Route path="buy" element={<Buy />} />
+            <Route path="summary" element={<Summary />} />
+            <Route path="*" element={<Home />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 

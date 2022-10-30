@@ -1,0 +1,12 @@
+.spec {
+    animation-name: appear;
+    animation-duration: 1s;
+}
+@keyframes appear {
+    from {
+        transform: translateY(200%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
